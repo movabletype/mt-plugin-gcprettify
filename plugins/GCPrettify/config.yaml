@@ -1,0 +1,13 @@
+name: GCPrettify
+id: GCPrettify
+key: GCPrettify
+version: 0.5
+author_name: Six Apart Ltd.
+author_link: http://www.sixapart.com/
+description: Use Google Code's script to prettify code and pre tags
+tags:
+    modifier:
+        gcprettify:
+            handler: $GCPrettify::GCPrettify::Util::gcprettify_filter
+callbacks:
+    post_init: $GCPrettify::GCPrettify::Util::patch_html_text_transform

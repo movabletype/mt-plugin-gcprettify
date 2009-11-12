@@ -1,0 +1,42 @@
+/* Pretty printing styles. Used with prettify.js. */
+
+code.prettyprint { padding: 2px; }
+pre code.prettyprint {
+    font-size: 85%;
+    display: block;
+    background-color: #fff;
+    border: 1px solid black;
+    margin-bottom: 1em;
+    overflow-x: auto; /* Use horizontal scroller if needed; for Firefox 2, not needed in Firefox 3 */
+    white-space: pre-wrap; /* css-3 */
+    white-space: -moz-pre-wrap !important; /* Mozilla, since 1999 */
+    white-space: -pre-wrap; /* Opera 4-6 */
+    white-space: -o-pre-wrap; /* Opera 7 */ /*
+    width: 99%; */
+    word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+
+.str { color:#181; }
+.kwd { color:#33f; }
+.com { color:#778; font-style: italic }
+.typ { color:#c40 }
+.lit { color:#900 }
+.pun { color:#000 }
+.pln { color:#333 }
+.tag { color:#369; font-weight:bold  }
+.atn { color:#939; font-weight:bold  }
+.atv { color:#181 }
+.dec { color:#606 }
+
+@media print {
+  .str { color: #060; }
+  .kwd { color: #006; font-weight: bold; }
+  .com { color: #600; font-style: italic; }
+  .typ { color: #404; font-weight: bold; }
+  .lit { color: #044; }
+  .pun { color: #440; }
+  .pln { color: #000; }
+  .tag { color: #006; font-weight: bold; }
+  .atn { color: #404; }
+  .atv { color: #060; }
+}
