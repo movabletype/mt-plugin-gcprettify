@@ -1,7 +1,7 @@
 # GCPrettify, a plugin for Movable Type
 
-Authors: Six Apart, Ltd.  
-Copyright: 2009 Six Apart, Ltd.  
+Authors: Six Apart
+Copyright: 2009 Six Apart Ltd.
 License: [Artistic License 2.0](http://www.opensource.org/licenses/artistic-license-2.0.php)
 
 
@@ -40,7 +40,7 @@ GCPrettify 0.5 uses the May 21, 2009 release of the prettify.js code.
 2. To trigger the styling the `prettyPrint()` javascript function must be called after the html page has loaded. To do this use one of the following methods after including the above scripts:
 
     * After the `<script>` tag loading the `mt.js` script (which may be in the `<head>` as well) add the following:
-    
+
             <script type="text/javascript">mtAttachEvent('load', prettyPrint);</script>
 
     * If using jQuery, add this code after including the jQuery script:
@@ -52,17 +52,17 @@ GCPrettify 0.5 uses the May 21, 2009 release of the prettify.js code.
             </script>
 
 3. Update template tags outputting content which will contain `<code>` html tags.
-    
+
     If `<code>` html tags will be added in the "body" or "extended" of entries, search the Movable Type templates for these tags:
-        
+
         <$mt:EntryBody$>
         <$mt:EntryExtended$>
-    
+
     Update these tags with the `gcprettify` attribute and a true value:
-        
+
         <$mt:EntryBody gcprettify="1"$>
         <$mt:EntryExtended gcprettify="1"$>
-    
+
     Save the templates.
 
 4. Create a new entry and paste the following code into the body of the entry:
@@ -118,8 +118,6 @@ Should look like this when installed:
         mt-static/
             plugins/
                 GCPrettify/
-
-[More in-depth plugin installation instructions](http://tinyurl.com/easy-plugin-install).
 
 
 ## Desired Features
